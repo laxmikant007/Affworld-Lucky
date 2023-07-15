@@ -24,6 +24,8 @@ import Wallet from './Containers/affiliates/Wallet';
 import ProfilePersonal from './Containers/affiliates/profile/personal';
 import ProfileBilling from './Containers/affiliates/profile/billing';
 import ManagerData from './Containers/managerData/index';
+import PaymentDetails from './Containers/Payment/index';
+
 
 // Lazy Load Component
 const Signup = lazy(() => import('./Containers/Signup'));
@@ -78,6 +80,8 @@ function App() {
         <Route path='/affiliate/profile/personal' element={<ProfilePersonal />} />
         <Route path='/affiliate/profile/billing' element={<ProfileBilling />} />
         <Route path='/managerData' element={<ManagerData />} />
+        <Route path='/paymentDetails' element={<PaymentDetails />} />
+
         {/* <Route exact path='/user/login' component={Login} /> */}
         {/* <Route exact path='/user/signup' component={Signup} /> */}
         {/* <Route exact path='/team' component={Team} />
